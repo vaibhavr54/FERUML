@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recoginition</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="face-api.min.js" defer></script>
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script src="modeling.js" type="module" defer></script>
+    <script src="storeValues.js" defer></script>
+    <script src="expression.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="video-container container-wrapper">
+            <div id="liveView" class="videoView">
+                <video id="video" autoplay playsinline></video>
+            </div>
+        </div>
+        
+        <div class="control-container container-wrapper">
+            <div class="faces-detected container-wrapper">
+                <header>Faces Detected</header>
+                <div class="faces-detected-wrapper">
+                    <!-- inserting the face-wrapper through javascript when face is detected -->
+                    <!-- <div class="face-wrapper"></div> -->
+                </div>
+            </div>
+            <div class="textual-informations container-wrapper">
+                <header>Expression Monitoring</header>
+                <div class="face-expression-wrapper">
+                    Loading....
+                    <!-- elements are inserted using javascript -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
